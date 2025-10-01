@@ -205,6 +205,13 @@ word-wrap: break-word;
   max-width: 1200px;
 }
 
+.contact1 .box .phone
+{
+  height: 80px;
+  width: 50px;
+  color: #ffffff;
+}
+
 .box {
   display: flex;
   flex-direction: column;

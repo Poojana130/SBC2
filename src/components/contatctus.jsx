@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './contactus.css';
-import Phone from '../assets/images/Phone.svg';
-import Email from '../assets/images/Email.svg';
-import Location from '../assets/images/Location.svg';
-import Business from '../assets/images/Alarm.svg';
+import { BiPhoneCall } from 'react-icons/bi';
+import { MdOutlineEmail } from 'react-icons/md';
+import { IoLocationOutline } from 'react-icons/io5';
+import { BsAlarm } from 'react-icons/bs';
 import emailjs from "emailjs-com";
 
 function Contact() {
@@ -70,13 +70,13 @@ function Contact() {
       {/* Contact Info Boxes */}
       <div className="contact1">
         <div className="box">
-          <img src={Phone} alt="Phone" className="phone" />
+        <div > <BiPhoneCall className="phone" /></div>
           <p className="p1">Phone</p>
           <p className="p2">+91 9148876700</p>
         </div>
 
         <div className="box">
-          <img src={Email} alt="Email" className="phone" />
+          <div>< MdOutlineEmail className="phone"/></div>
           <p className="p1">Email</p>
           <p>
             <a href="mailto:smartbraincreations@gmail.com" className="p2">
@@ -86,13 +86,13 @@ function Contact() {
         </div>
 
         <div className="box">
-          <img src={Location} alt="Location" className="phone" />
+          <div><IoLocationOutline className="phone"/></div>
           <p className="p1">Location</p>
           <p className="p3">Bangalore, Karnataka, India</p>
         </div>
 
         <div className="box">
-          <img src={Business} alt="Business Hours" className="phone" />
+          <div><BsAlarm className="phone"/></div>
           <p className="p1">Business Hours</p>
           <p className="p3">Mon - Fri: 9:00 AM - 6:00 PM</p>
         </div>
